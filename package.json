@@ -1,0 +1,23 @@
+{
+	"name": "test_organize_modules",
+	"version": "1.0.0",
+	"description": "test organize mediola modules",
+	"main": "index.js",
+	"scripts": {
+		"start": "node dist/index.js",
+		"dev": "nodemon src/index.ts",
+		"tsc": "tsc -p .",
+		"build": "browserify dist/index.js -o build/bundle.js",
+		"compile": "npm run tsc && npm run build"
+	},
+	"author": "Nouraldeen Alzway",
+	"license": "ISC",
+	"dependencies": {
+		"ts-node": "^10.7.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.16",
+		"prettier": "2.6.2",
+		"typescript": "^4.6.4"
+	}
+}
